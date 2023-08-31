@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a1p | grep -E '^[0-9A-Za-z]' | sort -t '/' -k 2,2 -k 1,1n
+ls -A1 | { printf %s,; sed 's/[^0-9A-Za-z]//g' | sort -df; } | sed 's/,$/\n/'
