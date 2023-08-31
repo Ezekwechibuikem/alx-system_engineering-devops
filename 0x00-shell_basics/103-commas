@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | { IFS=$'\n'; echo "${*/*//,}"; }
+ls -Ap | sort -k1,1n -k1.2,1d -k2 | tr '\n' ',' | sed 's/,$/\n/'
