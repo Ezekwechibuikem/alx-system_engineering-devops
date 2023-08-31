@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | { printf %s,; sed 's/[^0-9A-Za-z]//g' | sort -df; } | sed 's/,$/\n/'
+ls -Ap | sort -k1,1n -k1.2,1d -k2
