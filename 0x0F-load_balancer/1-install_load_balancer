@@ -46,7 +46,7 @@ frontend chikecode-tech-frontend
 backend chikecode-tech-backend
     balance roundrobin
     server 295568-web-01 54.237.2.181:80 check
-    server 295568-web-02 3.239.120.96:80 check
+    server 295568-web-02 18.204.7.248:80 check
 "
 
 # shellcheck disable=SC2154
